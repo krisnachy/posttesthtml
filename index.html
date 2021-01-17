@@ -14,6 +14,35 @@
             border: 3px solid black;
             width: 99%;
         }
+
+        input[type=text]{
+            padding: 5px;
+        }
+
+        input[type=submit]{
+            padding:10px;
+            border:none;
+            background-color:#3F51B5;
+            color:#fff;
+            font-weight:600;
+            border-radius:5px;
+        }
+
+        select{
+            height: 30px;
+        }
+
+        button {
+            appearance:none;
+            -webkit-appearance:none;
+            
+            padding:10px;
+            border:none;
+            background-color:#3F51B5;
+            color:#fff;
+            font-weight:600;
+            border-radius:5px;
+        }
     </style>
 </head>
 <body>
@@ -57,10 +86,8 @@
                     <td>Jenis Kelamin</td>
                     <td>:</td>
                     <td>
-                        <select name="kelamin" id="kelamin">
-                            <option value="Laki">Laki-laki</option>
-                            <option value="Perempuan">Perempuan</option>
-                        </select>
+                        <input type="radio" name="kelamin" id="kel1" value="Laki"><label for="kel1">Laki-laki</label>
+                        <input type="radio" name="kelamin" id="kel2" value="Perempuan"><label for="kel2">Perempuan</label>
                     </td>
                 </tr>
                 <tr>
@@ -129,10 +156,8 @@
                     <td>Status</td>
                     <td>:</td>
                     <td>
-                        <select>
-                            <option value="Kawin">Kawin</option>
-                            <option value="Belum">Belum Kawin</option>
-                        </select>
+                        <input type="radio" name="status" id="stat1" value="Kawin"><label for="stat1">Kawin</label>
+                        <input type="radio" name="status" id="stat2" value="Belum Kawin"><label for="stat2">Belum Kawin</label>
                     </td>
                 </tr>
                 <tr>
@@ -150,7 +175,7 @@
                     <td>Upload Foto</td>
                     <td>:</td>
                     <td>
-                        <input type="submit" value="Upload">
+                        <button>Upload</button>
                     </td>
                 </tr>
                 <tr>
@@ -205,11 +230,11 @@
                 <tr>
                     <td></td>
                     <td></td>
+                    <td></td>
+                    <td></td>
                     <td>
                         <input type="submit" value="Simpan">
                     </td>
-                    <td></td>
-                    <td></td>
                 </tr>
             </table>
         </div>
